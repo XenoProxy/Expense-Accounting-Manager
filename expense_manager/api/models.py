@@ -1,7 +1,6 @@
 from django.db import models
 
-class Category:
-    def __init__(self, type):
-        self.type = type
-
-category = Category(type = "Продукты")
+class Category(models.Model):
+    type = models.CharField(max_length=100, blank=True, default='')
+    class Meta:
+        ordering  = ['type']
