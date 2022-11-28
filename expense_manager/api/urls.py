@@ -5,6 +5,8 @@ from . import views
 urlpatterns = [
     path('users/', views.UserList.as_view()),
     path('users//', views.UserDetail.as_view()),
+    path('category/', views.CategoryList.as_view()),
+    path('category//', views.CategoryDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
