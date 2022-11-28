@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+class Category:
+    def __init__(self, type):
+        self.type = type
+
+category = Category(type = "Продукты")
